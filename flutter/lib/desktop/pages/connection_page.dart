@@ -414,37 +414,6 @@ class _ConnectionPageState extends State<ConnectionPage>
                                 fontSize: em)))
                     .marginOnly(left: em),
               ),
-              // ready && public
-              Flexible(
-                child: Offstage(
-                  offstage: !(!svcStopped.value &&
-                      stateGlobal.svcStatus.value == SvcStatus.ready &&
-                      svcIsUsingPublicServer.value),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Text(', ', style: TextStyle(fontSize: em)),
-                      Flexible(
-                        child: InkWell(
-                          onTap: onUsePublicServerGuide,
-                          child: Row(
-                            children: [
-                              Flexible(
-                                child: Text(
-                                  translate('setup_server_tip'),
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline,
-                                      fontSize: em),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-              )
             ],
           )),
     );
