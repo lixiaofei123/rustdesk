@@ -109,7 +109,7 @@ class _DesktopSettingPageState extends State<DesktopSettingPage>
       _TabInfo('General', Icons.settings_outlined, Icons.settings),
       _TabInfo('Security', Icons.enhanced_encryption_outlined,
           Icons.enhanced_encryption),
-      _TabInfo('Network', Icons.link_outlined, Icons.link),
+      // _TabInfo('Network', Icons.link_outlined, Icons.link),
       _TabInfo(
           'Display', Icons.desktop_windows_outlined, Icons.desktop_windows),
       _TabInfo('Account', Icons.person_outline, Icons.person),
@@ -126,7 +126,7 @@ class _DesktopSettingPageState extends State<DesktopSettingPage>
     final children = [
       _General(),
       _Safety(),
-      _Network(),
+      // _Network(),
       _Display(),
       _Account(),
       _About(),
